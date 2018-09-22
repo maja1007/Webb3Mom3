@@ -31,14 +31,14 @@ Med Hjälpav funktionen _"watch"_ ligger hela tiden systemet och lyssnar på om 
 
 
 ## Sass-kod innehållande:
-**Variabler
+** Variabler
 
-**Nesing
+** Nesing
 
-**Mixins
+** Mixins
 
-**Selector inheritance (nyckelordet "@extend")
+** Selector inheritance (nyckelordet "@extend")
 
-**If/else-satser
+** If/else-satser
 
-**Color functions (lighten, darken)
+** Color functions (lighten, darken)
