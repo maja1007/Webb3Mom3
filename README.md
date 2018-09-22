@@ -28,3 +28,17 @@ Med Hjälpav funktionen _"watch"_ ligger hela tiden systemet och lyssnar på om 
 3. **Uglify** - används för att komprimera (minify) javascriptsfiler - ta bort onödigt innehåll så som kommentarer och radbrytningar 
 4. **Uglifycss** - används för att komprimera (minify) css-filer - ta bort onödigt innehåll så som kommentarer och radbrytningar 
 5. **Sass** - används till att konvertera scss till css
+
+
+##Sass-kod innehållande:
+**Variabler
+
+**Nesing
+
+**Mixins
+
+**Selector inheritance (nyckelordet "@extend")
+
+**If/else-satser
+
+**Color functions (lighten, darken)
