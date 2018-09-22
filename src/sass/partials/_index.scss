@@ -1,0 +1,101 @@
+.welcome {
+    background-color:$blue1;
+    height:50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    h1{
+       font-size: 2rem;
+       font-weight: $fw-n;
+       color: $blue5; 
+       line-height: 2;
+       text-align: center;
+       padding-left:20px;
+       
+        span{
+            @include sans-serif($fs: 8rem, $color: $blue5);
+            display: block;
+
+            @include smalldev {
+                font-size:7rem;
+                color:red;
+            }
+
+        }
+
+        &::before,
+        &::after {
+            content: '';
+            display: block;
+            width:60%;
+            height:5px;
+            background: $light;                      
+        }
+
+        &::before {
+            margin:0 auto 2em;
+        }
+        &::after {
+            margin:3em auto 0;
+        }
+
+    }
+}
+
+header#main-header {
+    background: $blue2;
+    color:lighten($blue2, 10%);
+    text-shadow: 0 2px darken($white, 30%);
+}
+
+.intro {
+
+    padding:25px 0;
+    box-shadow: 2px 8px 8px #ccc;
+    
+    h1, p {
+        margin-bottom: 30px;
+    }
+
+    h1 {
+        margin-top:2em;
+    }
+}
+
+#intro-a {
+    @extend .intro;
+    background-color:$blue5;
+    color: set-text-color($blue5);
+   
+}
+
+#intro-b {
+    @extend .intro;
+    background-color:$blue1;
+    color: set-text-color($blue1);
+}
+
+
+.button-a {
+    @extend .button; 
+    background-color:$blue1;
+    color: set-text-color($blue1);
+
+    &:hover {
+        box-shadow: 2px 5px 8px lighten($blue1, 20%);
+    }
+
+}
+.button-b {
+    @extend .button; 
+    background-color:$blue5;
+    color: set-text-color($blue5);
+
+    &:hover {
+        box-shadow:2px 5px 8px lighten($blue5, 55%);
+    }
+}  
+
+

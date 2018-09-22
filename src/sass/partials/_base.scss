@@ -1,0 +1,115 @@
+*, *:before, *:after {
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    margin:0;padding:0
+  }
+img { max-width: 100%; }
+body {
+    background-color:$body-bg;
+    font-family: $ff-s;
+    font-size: $main-fs;
+    color:$dark;
+}
+p {line-height: 1.8;}
+
+a {
+    text-decoration: none;
+    color:$dark-color;
+}
+
+.container {
+    max-width: $container;
+    margin: auto;
+    padding: 0 15px;
+}
+
+header#main-header {
+    padding: 1em;
+    text-align: center;
+
+}
+
+.h1 {
+    font-family: $ff-ss;
+
+}
+section {
+    margin:55px 0;
+}
+
+article {
+    padding:25px 0px;
+    margin: 25px 0;
+
+}
+
+footer {
+    background-color:$blue1;
+    text-align: center;
+    padding:55px 0;
+    color: set-text-color($blue1);
+}
+
+/* -----------------------
+Colums
+------------------------*/
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+    }
+    
+    [class*="col-"] {
+     float: left;
+      padding:15px;
+    }
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}	
+
+/* -----------------------
+Headings
+------------------------*/
+h1 { font-size: 2.25em;}
+h2 { font-size: 1.75em;} 
+h3 { font-size: 1.375em;}
+h4 { font-size: 1.125em;} 
+h5 { font-size: 1em;} 
+h6 { font-size: .875em;} 
+
+
+/* -----------------------
+Button
+------------------------*/
+.button {
+    padding:10px 35px;
+    margin:25px 0;
+}
+
+
+
+
+@media screen and (max-width:768px) {
+
+.col-2 {width: 100%;}
+.col-4 {width: 100%;}
+.col-3 {width: 100%;}
+.col-5 {width: 100%;}
+.col-6 {width: 100%;}
+.col-7 {width: 100%;}
+.col-8 {width: 100%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}  
+}

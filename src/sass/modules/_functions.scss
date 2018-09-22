@@ -1,0 +1,14 @@
+//Functions
+@function set-text-color($bg-color) {
+    @if(lightness($bg-color) > 50) {
+        @return #000000;
+    } @else {
+        @return #ffffff;
+    }
+}
+
+@mixin smalldev {
+    @media (max-width:#{$smalldev}){
+        @content;
+    }
+}
